@@ -33,7 +33,14 @@ html,body {
 }
 
 /* MENU TABLE */
-table {
+#title {
+  padding-left: 1.5vh;
+  float: left;
+  color: rgb(127, 127, 127);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+table.right {
+  float: right;
   margin-left: auto;
   
   table-layout: fixed ;
@@ -53,7 +60,7 @@ td {
 }
 
 .parallax#banner {
-  background-image: url("imgs/slanted_colors.svg");
+  background-image: url("imgs/horizontal_colors.svg");
   
   width: 100%;
   height: 40vh;

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1920 1080"
+   style="enable-background:new 0 0 1920 1080;"
+   xml:space="preserve"
+   sodipodi:docname="vertical_colors.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"><metadata
+   id="metadata29"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs27" /><sodipodi:namedview
+   inkscape:document-rotation="0"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1016"
+   id="namedview25"
+   showgrid="false"
+   inkscape:zoom="0.23791197"
+   inkscape:cx="614.63381"
+   inkscape:cy="357.96843"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#35548C;}
+	.st1{fill:#4282A7;}
+	.st2{fill:#56A28A;}
+	.st3{fill:#66BA6A;}
+	.st4{fill:#A0D145;}
+	.st5{fill:#E6EE3A;}
+	.st6{fill:#F3AD50;}
+	.st7{fill:#E86882;}
+	.st8{fill:#C74D95;}
+	.st9{fill:#A24BA1;}
+</style>
+
+
+
+
+
+
+
+
+
+<g
+   id="g41"
+   transform="matrix(0,0.56523912,-1.7775413,0,1919.8723,-2.6295597)"><polygon
+     id="polygon4"
+     points="1920,0 1920,1080 1706.7,1080 1706.7,0 "
+     class="st0" /><polygon
+     id="polygon6"
+     points="1920,1080 1493.3,1080 1493.3,0 1706.7,0 "
+     class="st1" /><polygon
+     id="polygon8"
+     points="1706.7,1080 1280,1080 1280,0 1493.3,0 "
+     class="st2" /><polygon
+     id="polygon10"
+     points="1493.3,1080 1066.7,1080 1066.7,0 1280,0 "
+     class="st3" /><polygon
+     id="polygon12"
+     points="1280,1080 853.3,1080 853.3,0 1066.7,0 "
+     class="st4" /><polygon
+     id="polygon14"
+     points="1066.7,1080 640,1080 640,0 853.3,0 "
+     class="st5" /><polygon
+     id="polygon16"
+     points="853.3,1080 426.7,1080 426.7,0 640,0 "
+     class="st6" /><polygon
+     id="polygon18"
+     points="640,1080 213.3,1080 213.3,0 426.7,0 "
+     class="st7" /><polygon
+     id="polygon20"
+     points="426.7,1080 0,1080 0,0 213.3,0 "
+     class="st8" /><polygon
+     id="polygon22"
+     points="213.3,1080 0,1080 0,0 "
+     class="st9" /></g>
+</svg>
