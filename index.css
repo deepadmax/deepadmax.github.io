@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 html,body {
   text-align: center;
@@ -10,46 +12,54 @@ html,body {
   margin: 0;
   height: 100%;
   
-  font-family: 'Crimson Text', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 300;
+  color: #38354a;
 }
 
-.menu {
-  font-family: 'Open Sans Condensed', sans-serif;
+
+/* EVERYTHING IN THE MENU BAR */
+.menubar {
+  font-size: 2vh;
+  font-family: 'Bangers', sans-serif;
   font-weight: 300;
   
   background-color: white;
-  vertical-align: middle;
+  box-shadow: 0 0.5vh #38354a;
+  
   position: fixed;
   width: 100%;
   height: 5vh;
-  line-height: 4.2vh;
+  line-height: 5vh;
   
-  
+  display: grid;
+  grid-template-columns: 10vw 60vw 10vw 10vw 10vw;
 }
 
-.menu a[href] {
+.menubar #title {
+  text-align: left;
+  padding-left: 1.5vh;
+  color: #38354a;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* .menubar .button {
+  color: white;
+} */
+
+.button a[href] {
+  color: #38354a;
   text-decoration: none;
 }
 
-/* MENU TABLE */
-#title {
-  padding-left: 1.5vh;
-  float: left;
-  color: rgb(127, 127, 127);
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-table.right {
-  float: right;
-  margin-left: auto;
-  
-  table-layout: fixed ;
-  width: 30% ;
+.button:hover {
+  background-color: #3064a7;
 }
 
-td {
-  width: 25% ;
-} 
+.button:hover a[href] {
+  color: white;
+}
+/* -------------------------- */
 
 
 .parallax {
@@ -60,17 +70,10 @@ td {
 }
 
 .parallax#banner {
-  background-image: url("imgs/horizontal_colors.svg");
+  background-image: url("imgs/vertical_colors.svg");
   
   width: 100%;
   height: 40vh;
-}
-
-.parallax#space {
-  background-image: url("imgs/horizontal_colors.svg");
-  
-  width: 100%;
-  height: 10vh;
 }
 
 #logo {
@@ -87,9 +90,14 @@ td {
   width: 100%;
   height: 100%;
   transform: translate(50%, 100vh);
-  
 }
 
+
+/* HEADERS */
+h1 {
+  font-size: 48px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 h3 {
   padding: 30px;
   text-align: center;
