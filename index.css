@@ -1,104 +1,90 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-html,body {
-  text-align: center;
+/* BASIC STUFF */
+body {
   padding: 0;
-  margin: 0;
+  margin: auto;
+  
   height: 100%;
   
+  text-align: center;
   font-family: 'Dosis', sans-serif;
-  font-weight: 300;
   color: #38354a;
+  
+  background-color: #3c3a57;
 }
 
-
-/* EVERYTHING IN THE MENU BAR */
-.menubar {
-  font-size: 2vh;
-  font-family: 'Bangers', sans-serif;
-  font-weight: 300;
-  
-  background-color: white;
-  box-shadow: 0 0.5vh #38354a;
-  
-  position: fixed;
-  width: 100%;
-  height: 5vh;
-  line-height: 5vh;
-  
-  display: grid;
-  grid-template-columns: 10vw 60vw 10vw 10vw 10vw;
-}
-
-.menubar #title {
-  text-align: left;
-  padding-left: 1.5vh;
-  color: #38354a;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-/* .menubar .button {
-  color: white;
-} */
-
-.button a[href] {
-  color: #38354a;
+a[href] {
   text-decoration: none;
+  color: inherit;
 }
 
-.button:hover {
-  background-color: #3064a7;
+/* EVERYTHING in PAGE */
+div.page {
+  margin: auto;
+  padding-top: calc(50vh - 176px);
+  
+  width: 320px;
+  height: 100%;
+  
+  text-align: left;
 }
 
-.button:hover a[href] {
-  color: white;
+div.page div {  
+  border-radius: 10px;
 }
-/* -------------------------- */
 
-
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
+div.page .bar {
+  height: 16px;
+  
+  background-image: url("imgs/vertical_colors.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.parallax#banner {
-  background-image: url("imgs/vertical_colors.svg");
+div.page .description {
+  margin: 10px auto 20px auto;
+  padding: 15px 20px 15px 20px;
   
-  width: 100%;
-  height: 40vh;
-}
-
-#logo {
-  display: inline-block;
-  height: 20vh;
-  vertical-align: middle;
-  padding-top: 12.5vh;
-}
-
-.whitebox {
-  display: inline;
+  color: #12111b;
+  
   background-color: white;
-  
-  width: 100%;
-  height: 100%;
-  transform: translate(50%, 100vh);
 }
 
+/* PLATFORM OBJECTS */
+.account {
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 20px;
+  
+  text-align: left;
+  
+  background-color: white;
+  border-left: 10px solid #636999;
+  
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
 
-/* HEADERS */
-h1 {
-  font-size: 48px;
+.account #platform {
+  padding-top: 0.9px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.account #account {
   font-family: 'Roboto Condensed', sans-serif;
 }
-h3 {
-  padding: 30px;
-  text-align: center;
+
+.account#discord {
+  border-color: #7289da;
+}
+
+.account#steam {
+  border-color: #1b2838;
+}
+
+.account#twitter {
+  border-color: #1DA1F2;
 }
