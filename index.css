@@ -25,7 +25,7 @@ div.page {
   text-align: left;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 820px) {
   div.page {
     margin: auto;
     padding-top: calc(50vh - 206px);
