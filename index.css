@@ -19,10 +19,9 @@ body {
 /* EVERYTHING in PAGE */
 div.page {
   margin: auto;
-  padding-top: calc(50vh - 206px);
+  transform: translateY(50vh) translateY(-50%);
   
   width: 320px;
-  height: 100%;
   
   text-align: left;
 }
