@@ -16,20 +16,20 @@ body {
   background-color: #3c3a57;
 }
 
-a[href] {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* EVERYTHING in PAGE */
 div.page {
   margin: auto;
-  padding-top: calc(50vh - 176px);
+  padding-top: calc(50vh - 206px);
   
   width: 320px;
   height: 100%;
   
   text-align: left;
+}
+
+div.page a[href] {
+  text-decoration: underline;
+  color: inherit;
 }
 
 div.page div {  
@@ -65,6 +65,11 @@ div.page .description {
   
   display: grid;
   grid-template-columns: 25% 75%;
+}
+
+a[href]#notif {
+  text-decoration: none;
+  color: inherit;
 }
 
 .account #platform {
