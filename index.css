@@ -13,7 +13,7 @@ body {
   font-family: 'Dosis', sans-serif;
   color: #38354a;
   
-  background-color: #3c3a57;
+  background-color: #262536;
 }
 
 /* EVERYTHING in PAGE */
@@ -87,7 +87,7 @@ a[href]#notif {
 }
 
 .account#steam {
-  border-color: #1b2838;
+  border-color: #2a475e;
 }
 
 .account#twitter {
