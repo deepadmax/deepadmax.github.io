@@ -18,25 +18,14 @@ body {
 
 /* EVERYTHING in PAGE */
 div.page {
-  /* margin: 90vw; */
   margin: auto;
-  padding: 25vh 12vw 24vh 12vw;
+  padding-top: calc(50vh - 206px);
+  
+  width: 320px;
+  height: 100%;
   
   text-align: left;
 }
-
-@media (min-width: 820px) {
-  div.page {
-    margin: auto;
-    padding-top: calc(50vh - 206px);
-    
-    width: 320px;
-    height: 100%;
-    
-    text-align: left;
-  }
-}
-
 
 div.page a[href] {
   text-decoration: underline;
