@@ -16,7 +16,12 @@ body {
   background-color: #1f1e2b;
 }
 
-/* EVERYTHING in PAGE */
+a[href] {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* PAGE */
 div.page {
   transform: translateX(50vw) translateX(-50%) translateY(50vh) translateY(-50%);
   
@@ -25,7 +30,7 @@ div.page {
   text-align: left;
 }
 
-div.page a[href] {
+div.description a[href] {
   text-decoration: underline;
   color: inherit;
 }
@@ -34,7 +39,8 @@ div.page div {
   border-radius: 10px;
 }
 
-div.page .bar {
+/* RAINBOW BAR */
+.bar {
   height: 16px;
   
   background-image: url("imgs/vertical_colors.svg");
@@ -42,7 +48,43 @@ div.page .bar {
   background-size: cover;
 }
 
-div.page .description {
+/* COLLECTIONS */
+.collection {
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  
+  background-color: white;
+  
+  font-size: 14px;
+  text-align: center;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-around;
+}
+
+.collection .item {
+  width: 40px;
+  height: 40px;
+  
+  background-color: #e0e0e0;
+}
+
+.collection .item img {
+  width: 100%;
+}
+
+/* COLLECTION: Links */
+.collection .item#thecryptadex {
+  background-image: url("imgs/icons/thecryptadex.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* DESCRIPTION */
+.description {
   margin: 10px auto 20px auto;
   padding: 15px 20px 15px 20px;
   
@@ -65,18 +107,13 @@ div.page .description {
   grid-template-columns: 25% 75%;
 }
 
-a[href]#notif {
-  text-decoration: none;
-  color: inherit;
-}
-
-.account #platform {
+.account .platform {
   padding-top: 0.9px;
   font-size: 14px;
   font-weight: bold;
 }
 
-.account #account {
+.account .username {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -91,3 +128,4 @@ a[href]#notif {
 .account#twitter {
   border-color: #1DA1F2;
 }
+

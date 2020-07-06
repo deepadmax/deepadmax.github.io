@@ -7,41 +7,92 @@
   </head>
   
   <body>
+    <!-- A Copy-To-Clipboard Function -->
+    <script type="text/javascript">
+      function copyToClipboard() {
+        document.execCommand("Copy");
+      }
+    </script>
+    
+    <!-- Everything on the page -->
     <div class="page">
       <a href="https://www.latlmes.com/breaking/why-easter-eggs-are-important-to-the-online-community-1" target="_blank"><div class="bar"></div></a>
       
+      <!-- PROJECTS -->
+      <!-- <div class="collection">
+        Project Inventory<br><br>
+        
+        <div class="items">
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+        </div>
+      </div> -->
       
+      <!-- DESCRIPTION SECTION -->
       <div class="description">
         My webname is <i>deepadmax</i> and I'm a programmer.
         I will host my portfolio here.<br>
         <br>
         <i>
           This website is still under construction.<br>
-          I will add more content later.<br>
-          <br>
-          In the meanwhile,<br> enjoy your time at
-          <a href="https://www.isverycash.money/" target="_blank">my other website</a>.
+          I will add more content later.
         </i><br>
         <br>
         
         You can find me on the platforms listed below.<br>
-        But since I mainly use Linux, I rarely check in on
-        those usually on Windows, ex. Steam.
+        I'm rarely available elsewhere than on Discord.
       </div>
       
-      <a id="notif" href="">
-        <div class="account" id="discord">
-          <div id="platform">Discord</div>
-          <div id="name">deepadmax#0939</div>
+      <!-- PLATFORMS -->
+      <div class="account" id="discord">
+        <div class="platform">Discord</div>
+        <div class="username" 
+         title="Copy to clipboard"
+         style="user-select: all"
+         onclick="copyToClipboard()">deepadmax#0939</div>
+      </div>
+      
+      <a href="https://steamcommunity.com/id/deepadmax/"
+       target="_blank"
+       title="Visit my Steam profile">
+      
+        <div class="account" id="steam">
+          <div class="platform">Steam</div>
+          <div class="username">deepadmax</div>
         </div>
       </a>
       
-      <a id="notif" href="https://steamcommunity.com/id/deepadmax/" target="_blank">
-        <div class="account" id="steam">
-          <div id="platform">Steam</div>
-          <div id="name">deepadmax</div>
+      <!-- LINKS -->
+      <div class="collection">
+        Links to places where you can find me<br><br>
+        
+        <div class="items">
+          <a href="https://discord.gg/vREgHha"
+           target="_blank"
+           title="The Cryptadex (Puzzle & Coding Discord Server)">
+           
+            <div class="item" id="thecryptadex"></div>
+          </a>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
+          
+          <div class="item"></div>
         </div>
-      </a>
-    </div>
+      </div>
   </body>
 </html>
