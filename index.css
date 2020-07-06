@@ -22,20 +22,15 @@ a[href] {
 }
 
 /* PAGE */
-div.page {
+.page {
   transform: translateX(50vw) translateX(-50%) translateY(50vh) translateY(-50%);
   
   width: 320px;
   
-  text-align: left;
+  text-align: center;
 }
 
-div.description a[href] {
-  text-decoration: underline;
-  color: inherit;
-}
-
-div.page div {  
+.page div {  
   border-radius: 10px;
 }
 
@@ -88,9 +83,15 @@ div.page div {
   margin: 10px auto 20px auto;
   padding: 15px 20px 15px 20px;
   
+  text-align: left;
   color: #12111b;
   
   background-color: white;
+}
+
+.description a[href] {
+  text-decoration: underline;
+  color: inherit;
 }
 
 /* PLATFORM OBJECTS */
