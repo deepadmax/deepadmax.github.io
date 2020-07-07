@@ -15,64 +15,37 @@
       <div class="column">        
         <div class="paragraph" id="">
           <div class="title">Explanation / Disclaimer</div>
-          <i>
-            This website is still under construction.<br>
-            I will add more content later.<br>
-            <br>
-            And because I'm still developing the site,<br>
-            I haven't even bothered to use responsive design
-            and have elements resize according to
-            the width and height of your screen.
-          </i><br>
+          <button type="button" class="collapsible">RESIZE</button>
+          
+          <div class="content">
+            <i>
+              This website is still under construction.<br>
+              I will add more content later.<br>
+              <br>
+              And because I'm still developing the site,<br>
+              I haven't even bothered to use responsive design
+              and have elements resize according to
+              the width and height of your screen.
+            </i><br>
+          </div>
         </div>
         
         <div class="rainbow divider"></div>
-        
-        <div class="paragraph">
-          <div class="title">Lorem Ipsum</div>
-          
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Fusce mollis nisl vel metus commodo efficitur. Morbi at arcu
-          id dui faucibus facilisis. Suspendisse interdum magna sed
-          rhoncus ullamcorper. Nam eget quam massa. Nullam vel erat
-          sit amet est placerat dapibus. Nulla ullamcorper erat in
-          metus dictum dictum. Duis fermentum pulvinar mauris, non
-          blandit ipsum ultrices in. Nullam at feugiat elit. Integer
-          fringilla elementum lorem nec commodo. Mauris pharetra est
-          nec mauris lobortis tempor. Nulla non interdum quam.
-        </div>
-      </div>
-      
-      <div class="column">
-        <a href="https://www.latlmes.com/breaking/why-easter-eggs-are-important-to-the-online-community-1" target="_blank"><div class="rainbow"></div></a>
-        <div class="divider"></div>
-        
-        <div class="paragraph">
-          <div class="title">Hello, World!</div>
-          My webname is <i>deepadmax</i> and I'm a programmer.
-          I enjoy solving problems with clearly defined goals or limitations.
-          <br><br>
-          You can find me on the platforms listed below.
-          I'm rarely available elsewhere than on Discord.
-        </div>
         
         <!-- SOCIAL -->
         <div class="divider big"></div>
         
         <div class="account" id="discord">
           <div class="platform">Discord</div>
-          <div class="username" 
-           title="Copy to clipboard"
+          <div class="username"
            style="user-select: all"
-           onclick="copyToClipboard()">deepadmax#0939</div>
+           onclick="copyToClipboard()">deepadmax#0939<img
+            id="copy-to-clipboard" src="imgs/icons/misc/copy.png"></div>
         </div>
         
         <div class="divider"></div>
         
-        <a href="https://steamcommunity.com/id/deepadmax/"
-         target="_blank"
-         title="Visit my Steam profile">
-        
+        <a href="https://steamcommunity.com/id/deepadmax/" target="_blank">
           <div class="account" id="steam">
             <div class="platform">Steam</div>
             <div class="username">deepadmax</div>
@@ -102,6 +75,40 @@
         </div>
       </div>
       
+      <div class="column" id="center">
+        <a href="https://www.latlmes.com/breaking/why-easter-eggs-are-important-to-the-online-community-1" target="_blank"><div class="rainbow"></div></a>
+        <div class="divider"></div>
+        
+        <div class="paragraph">
+          <div class="title">Hello, World!</div>
+          My webname is <i>deepadmax</i> and I'm a programmer.
+          I enjoy solving problems with clearly defined goals or limitations.
+          <br><br>
+          You can find me on the platforms listed below.
+          I'm rarely available elsewhere than on Discord.
+          
+          My webname is <i>deepadmax</i> and I'm a programmer.
+          I enjoy solving problems with clearly defined goals or limitations.
+          <br><br>
+          You can find me on the platforms listed below.
+          I'm rarely available elsewhere than on Discord.
+          
+          My webname is <i>deepadmax</i> and I'm a programmer.
+          I enjoy solving problems with clearly defined goals or limitations.
+          <br><br>
+          You can find me on the platforms listed below.
+          I'm rarely available elsewhere than on Discord.
+          
+          My webname is <i>deepadmax</i> and I'm a programmer.
+          I enjoy solving problems with clearly defined goals or limitations.
+          <br><br>
+          You can find me on the platforms listed below.
+          I'm rarely available elsewhere than on Discord.
+        </div>
+        
+        
+      </div>
+      
       <div class="column">        
         <div class="paragraph" id="">
           <div class="title">Stuff</div>
@@ -127,5 +134,7 @@
         </div>
       </div>
     </div>
+    
+    <script src="js/collapse.js"></script>
   </body>
 </html>
