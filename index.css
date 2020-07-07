@@ -213,7 +213,7 @@ img#copy-to-clipboard {
   text-align: left;
   
   background-color: white;
-  border-left: 1vh solid #636999;
+  border-left: 1.4vh solid #636999;
   
   display: grid;
   grid-template-columns: 25% 75%;
