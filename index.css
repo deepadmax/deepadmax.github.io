@@ -46,21 +46,27 @@ img#copy-to-clipboard {
   cursor: pointer;
   border: none;
   outline: none;
+  user-select: none;
   
   background-color: transparent;
 }
 
 .collapsible::after {
+  transform: rotate(180deg);
+  
+  width: 1vh;
+  /* height: 1vh; */
+  
   float: right;
   
-  content: "\02795";
+  content: url("imgs/icons/misc/arrow.svg");
   
-  font-size: 13px;
-  color: white;
+  font-size: 2vh;
 }
 
 .active::after {
-  content: "\2796";
+  transform: rotate(0deg) translateY(-0.75vh);
+  content: url("imgs/icons/misc/arrow.svg");
 }
 
 .content {
@@ -85,7 +91,7 @@ img#copy-to-clipboard {
 }
 
 .page div {  
-  border-radius: 1vh;
+  border-radius: 1.2vh;
 }
 
 .column {
@@ -214,7 +220,7 @@ img#copy-to-clipboard {
 }
 
 .account .platform {
-  padding-top: 0.9px;
+  padding-top: 0.1vh;
   font-size: 1.4vh;
   font-weight: bold;
 }
