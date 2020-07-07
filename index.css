@@ -104,27 +104,27 @@ a[href] {
 }
 
 /* COLLECTION: Programming Languages */
-.collection#programming-languages .item {
+.collection#languages-libraries .item {
   background-size: 75%;
 }
 
-.collection#programming-languages .item#python {
+.collection#languages-libraries .item#python {
   background-image: url("imgs/icons/languages/python.png");
 }
 
-.collection#programming-languages .item#html {
+.collection#languages-libraries .item#html {
   background-image: url("imgs/icons/languages/html.png");
 }
 
-.collection#programming-languages .item#css {
+.collection#languages-libraries .item#css {
   background-image: url("imgs/icons/languages/css.png");
 }
 
-.collection#programming-languages .item#javascript {
+.collection#languages-libraries .item#javascript {
   background-image: url("imgs/icons/languages/javascript.png");
 }
 
-.collection#programming-languages .item#nodejs {
+.collection#languages-libraries .item#nodejs {
   background-image: url("imgs/icons/languages/nodejs.png");
 }
 
