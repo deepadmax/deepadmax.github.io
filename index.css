@@ -31,12 +31,10 @@ a[href] {
     
   text-align: center;
   
-  max-width: 640px;
-  
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 40px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .page div {  
