@@ -23,7 +23,7 @@ a[href] {
   color: inherit;
 }
 
-/* MISCELLANEOUS */
+/* COPY TO CLIPBOARD */
 img#copy-to-clipboard {
   float: right;
   width: 1.6vh;
@@ -37,28 +37,44 @@ img#copy-to-clipboard {
   opacity: 50%;
 }
 
+/* COLLAPSIBLE ELEMENTS */
 .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+  padding: 0;
+  
   width: 100%;
+  
+  cursor: pointer;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 15px;
+  
+  background-color: transparent;
+}
+
+.collapsible::after {
+  float: right;
+  
+  content: "\02795";
+  
+  font-size: 13px;
+  color: white;
+}
+
+.active::after {
+  content: "\2796";
 }
 
 .content {
-  padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 /* PAGE */
 .page {
-  transform: translate(50vw, 50vh) translate(-50%, -50%);
+  /* transform: translate(50vw, 50vh) translate(-50%, -50%); */
+  margin: 10vh 0 10vh 0;
   
   text-align: center;
   
@@ -180,6 +196,7 @@ img#copy-to-clipboard {
   margin-bottom: 1.6vh;
   
   font-size: 1.4vh;
+  text-align: left;
   letter-spacing: 0.15vh;
 }
 
