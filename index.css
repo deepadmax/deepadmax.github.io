@@ -11,7 +11,7 @@ body {
   height: 100%;
   
   text-align: center;
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   font-family: 'Dosis', sans-serif;
   color: #38354a;
   
@@ -208,10 +208,14 @@ img#copy-to-clipboard {
 }
 
 .paragraph#pdf {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: white;
   
-  background-color: #DC1D00;
+  background-color: #e24129;
+}
+
+.paragraph#pdf .title {
+  font-weight: bold;
 }
 
 /* SOCIAL */
@@ -234,6 +238,7 @@ img#copy-to-clipboard {
 }
 
 .account .username {
+  font-size: 1.7vh;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
