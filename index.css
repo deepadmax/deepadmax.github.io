@@ -11,7 +11,7 @@ body {
   height: 100%;
   
   text-align: center;
-  font-size: 1.66vh;
+  font-size: 1.7vh;
   font-family: 'Dosis', sans-serif;
   color: #38354a;
   
@@ -34,6 +34,7 @@ img#copy-to-clipboard {
 }
 
 .account .username:hover img#copy-to-clipboard {
+  margin-top: 0.15vh;
   opacity: 50%;
 }
 
@@ -80,7 +81,7 @@ img#copy-to-clipboard {
 /* PAGE */
 .page {
   /* transform: translate(50vw, 50vh) translate(-50%, -50%); */
-  margin: 10vh 0 10vh 0;
+  margin: 20vh 0 20vh 0;
   
   text-align: center;
   
@@ -99,7 +100,7 @@ img#copy-to-clipboard {
 }
 
 .column#center {
-  width: 64vh;
+  width: 48vh;
 }
 
 /* DIVIDERS */
@@ -125,7 +126,7 @@ img#copy-to-clipboard {
   
   background-color: white;
   
-  font-size: 1.47vh;
+  font-size: 1.5vh;
   text-align: center;
 }
 
@@ -204,6 +205,13 @@ img#copy-to-clipboard {
   font-size: 1.4vh;
   text-align: left;
   letter-spacing: 0.15vh;
+}
+
+.paragraph#pdf {
+  font-weight: bold;
+  color: white;
+  
+  background-color: #DC1D00;
 }
 
 /* SOCIAL */
