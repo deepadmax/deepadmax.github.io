@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+
 /* BASIC STUFF */
 body {
   padding: 0;
@@ -11,16 +12,34 @@ body {
   height: 100%;
   
   text-align: center;
-  font-size: 1.9vh;
+  font-size: 2.1vh;
   font-family: 'Dosis', sans-serif;
   color: #38354a;
   
   background-color: #1f1e2b;
+  
+  overflow: auto;
 }
 
 a[href] {
   text-decoration: none;
   color: inherit;
+}
+
+/* BACKGROUND LOGO */
+img#background-logo {
+  z-index: 1;
+  
+  position: fixed;
+  
+  bottom: -10vh;
+  left: -5vh;
+  
+  width: 65vh;
+  
+  opacity: 50%;
+  
+  user-select: none;
 }
 
 /* COPY TO CLIPBOARD */
@@ -50,24 +69,25 @@ img#copy-to-clipboard {
   user-select: none;
   
   background-color: transparent;
+
+  /* transition: 0.2s ease-in-out; */
+  transition-delay: 0;
 }
 
-.collapsible::after {
+.collapsible.arrow::after {
   transform: rotate(180deg);
   
   width: 1vh;
-  /* height: 1vh; */
   
   float: right;
   
-  content: url("imgs/icons/misc/arrow.svg");
+  content: url("imgs/ui/misc/arrow.svg");
   
   font-size: 2vh;
 }
 
-.active::after {
-  transform: rotate(0deg) translateY(-0.75vh);
-  content: url("imgs/icons/misc/arrow.svg");
+.active.arrow::after {
+  transform: translateY(-0.75vh) rotate(0deg);
 }
 
 .content {
@@ -75,13 +95,18 @@ img#copy-to-clipboard {
   overflow: hidden;
   
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-in;
+}
+
+.content>.content {
+  padding: 0 1vh 1vh 1vh;
+  /* background-color: #0001; */
 }
 
 /* PAGE */
 .page {
   /* transform: translate(50vw, 50vh) translate(-50%, -50%); */
-  margin: 20vh 0 20vh 0;
+  margin: 10vh 20vh;
   
   text-align: center;
   
@@ -92,22 +117,24 @@ img#copy-to-clipboard {
 }
 
 .page div {  
+  z-index: 2;
+  
   border-radius: 1.2vh;
 }
 
 .column {
-  width: 32vh;
+  width: 36vh;
 }
 
 .column#center {
-  width: 48vh;
+  width: 64vh;
 }
 
 /* DIVIDERS */
 .rainbow {
   height: 1.2vh;
   
-  background-image: url("imgs/vertical_colors.svg");
+  background-image: url("imgs/ui/misc/rainbow.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,17 +147,65 @@ img#copy-to-clipboard {
   margin: 2vh auto 2vh auto;
 }
 
+/* STATUS BAR */
+.meter-header {
+  margin: 0.6vh 1vh 0.5vh 1vh;
+  
+  height: 2vh;
+  
+  font-size: 1.7vh;
+}
+
+.meter-header[_title]::before {
+  content: attr(_title);
+  
+  float: left;
+}
+
+.meter-header[_desc]::after {
+  content: attr(_desc);
+  
+  float: right;
+}
+
+div.meter {  
+  margin: 0 0.75vh;
+  height: 1vh;
+  
+  text-align: left;
+  font-size: 1.5vh;
+
+  border-radius: 30vh;
+
+  background-color: #d8d8d8;
+
+  /* overflow: hidden; */
+}
+
+div.meter::after {
+  height: 100%;
+  width: calc(var(--level)*10%);
+  
+  display: block;
+  content: " ";
+  
+  border-radius: inherit;
+
+  background-color: #0fb460;
+}
+
 /* COLLECTIONS */
 .collection {
   padding: 1vh;
   
   background-color: white;
   
-  font-size: 1.5vh;
+  font-size: 1.7vh;
   text-align: center;
 }
 
 .collection .title {
+  font-size: 1.8vh;
   margin-bottom: 1.2vh;
 }
 
@@ -144,8 +219,8 @@ img#copy-to-clipboard {
 }
 
 .items .item {
-  width: 4vh;
-  height: 4vh;
+  width: 5vh;
+  height: 5vh;
   
   background-color: #e2e2e2;
   
@@ -156,32 +231,37 @@ img#copy-to-clipboard {
 
 /* COLLECTION: Where to find me? */
 .collection .item#thecryptadex {
-  background-image: url("imgs/icons/places/thecryptadex.png");
+  background-image: url("imgs/ui/places/thecryptadex.png");
 }
 
 /* COLLECTION: Programming Languages */
+.collection#languages-libraries .items {
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+
 .collection#languages-libraries .item {
+  background-color: transparent;
   background-size: 75%;
 }
 
 .collection#languages-libraries .item#python {
-  background-image: url("imgs/icons/languages/python.png");
+  background-image: url("imgs/ui/languages/python.png");
 }
 
 .collection#languages-libraries .item#html {
-  background-image: url("imgs/icons/languages/html.png");
+  background-image: url("imgs/ui/languages/html.png");
 }
 
 .collection#languages-libraries .item#css {
-  background-image: url("imgs/icons/languages/css.png");
+  background-image: url("imgs/ui/languages/css.png");
 }
 
 .collection#languages-libraries .item#javascript {
-  background-image: url("imgs/icons/languages/javascript.png");
+  background-image: url("imgs/ui/languages/javascript.png");
 }
 
 .collection#languages-libraries .item#nodejs {
-  background-image: url("imgs/icons/languages/nodejs.png");
+  background-image: url("imgs/ui/languages/nodejs.png");
 }
 
 /* PARAGRAPH */
@@ -202,13 +282,12 @@ img#copy-to-clipboard {
 .paragraph .title {
   margin-bottom: 1.6vh;
   
-  font-size: 1.4vh;
+  font-size: 1.6vh;
   text-align: left;
   letter-spacing: 0.15vh;
 }
 
 .paragraph#pdf {
-  /* font-weight: bold; */
   color: white;
   
   background-color: #e24129;
@@ -232,13 +311,14 @@ img#copy-to-clipboard {
 }
 
 .account .platform {
-  padding-top: 0.1vh;
-  font-size: 1.4vh;
+  padding-top: 0.05vh;
+  
+  font-size: 1.6vh;
   font-weight: bold;
 }
 
 .account .username {
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -251,6 +331,6 @@ img#copy-to-clipboard {
 }
 
 .account#twitter {
-  border-color: #1DA1F2;
+  border-color: #1da1f2;
 }
 

@@ -9,13 +9,14 @@
     <script src="js/copy.js"></script>
   </head>
   
-  <body>    
+  <body>
+    <img src="imgs/logo.png" id="background-logo">
+    
     <!-- Everything on the page -->
     <div class="page">
       <div class="column">
         <div class="paragraph" id="pdf">
-          <div class="title collapsible">Download CV</div>
-          
+          <div class="title collapsible arrow">Download CV</div>
           <div class="content">
             If you'd rather read everything in a boring PDF,
             you can <a href="">click here</a> to download it.
@@ -25,7 +26,7 @@
         <div class="divider"></div>
         
         <div class="paragraph">
-          <div class="title collapsible">Business Inquiries</div>
+          <div class="title collapsible arrow">Business Inquiries</div>
           <div class="content">
             If you're a right ol' fecker, you can contact me via email.
           </div>
@@ -34,14 +35,12 @@
         <div class="rainbow divider big"></div>
         
         <!-- SOCIAL -->
-        <div class="divider big"></div>
-        
         <div class="account" id="discord">
           <div class="platform">Discord</div>
           <div class="username"
            style="user-select: all"
            onclick="copyToClipboard()">deepadmax#0939<img
-            id="copy-to-clipboard" src="imgs/icons/misc/copy.png"></div>
+            id="copy-to-clipboard" src="imgs/ui/misc/copy.png"></div>
         </div>
         
         <div class="divider"></div>
@@ -78,7 +77,7 @@
         <div class="divider big"></div>
         
         <div class="paragraph">
-          <div class="title collapsible">Recommendations</div>
+          <div class="title collapsible arrow">References</div>
           <div class="content">
             "This guy's the best ever! Hire them!"<br>
             - Someone
@@ -97,44 +96,102 @@
           This website is, like, my CV & personal letter.
         </div>
         
-        <div class="divider big"></div>
-        
-        <div class="paragraph">
-          <div class="title collapsible">Skills</div>
-          <div class="content">
-            What I do have are a very particular set of skills,<br>
-            skills I have acquired over a very long career.<br>
-            Skills that make me a nightmare for people like you.
-          </div>
-        </div>
-        
         <div class="divider"></div>
         
         <div class="paragraph">
-          <div class="title collapsible">Experiences</div>
+          <div class="title collapsible arrow">Experiences</div>
           <div class="content">
             I googled some shizzle and now I can code.
           </div>
         </div>
-      </div>
-      
-      <div class="column">        
-        <div class="collection" id="languages-libraries">
-          <div class="title">Languages & Libraries</div>
-          These are languages and libraries I'm proficient at.
-          <div class="divider"></div>
+        
+        <div class="divider big"></div>
+        
+        <div class="paragraph">
+          <div class="title collapsible arrow">My Skillset</div>
           
-          <div class="items">
-            <div class="item" id="python" title="Python"></div>
-            <div class="item" id="html" title="HTML"></div>
-            <div class="item" id="css" title="CSS"></div>
-            <div class="item" id="javascript" title="JavaScript"></div>
-            <div class="item" id="nodejs" title="Node.js"></div>
-            <div class="item"></div>
+          <div class="content">
+            <!-- <div class="collection" id="languages-libraries">              
+              These are languages and libraries I'm proficient at.
+              <div class="divider"></div>
+              
+              <div class="items">
+                <div class="item" id="python" title="Python"></div>
+                <div class="item" id="html" title="HTML"></div>
+                <div class="item" id="css" title="CSS"></div>
+                <div class="item" id="javascript" title="JavaScript"></div>
+                <div class="item" id="nodejs" title="Node.js"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+            </div> -->
+            
+            <!-- <div class="divider big"></div> -->
+            
+            I'll write something more elaborate.<br>
+            The meters below will have to do for now.<br>
+            <br>
+            <i>Click on an item for a short description.</i>
+            
+            <div class="divider big"></div><br>
+            
+            <div class="title">Languages & Libraries</div>
+            
+            <div class="title collapsible">
+              <div class="meter-header" _title="Python" _desc="Very Good"></div>
+              <div class="meter" style="--level:8"></div>
+            </div>
+            <div class="content">
+              "My favourite language is Python."
+              <div class="divider"></div>
+            </div>
+            
+            <div class="title collapsible">
+              <div class="meter-header" _title="CSS" _desc="Good Enough"></div>
+              <div class="meter" style="--level:4"></div>
+            </div>
+            <div class="content">
+              "No one can truly ever excel at CSS.<br>
+              <i>'Tis the bane of web development!</i>"
+              <div class="divider"></div>
+            </div>
+            
+            <div class="title collapsible">
+              <div class="meter-header" _title="JavaScript" _desc="Good Enough"></div>
+              <div class="meter" style="--level:5"></div>
+            </div>
+            <div class="content">
+              "I'm mostly familiar with JavaScript, working with P5.js"
+              <div class="divider"></div>
+            </div>
+              
+            <div class="divider big"></div>
+            
+            <div class="title">Types of Work</div>
+            
+            <div class="title collapsible">
+              <div class="meter-header" _title="Organisation & Structure" _desc="Talented"></div>
+              <div class="meter" style="--level:10"></div>
+            </div>
+            <div class="content">
+              <i>"I'm autistic, REEEEEEEEEEEEEEE!"</i>
+              <div class="divider"></div>
+            </div>
+            
+            <div class="divider"></div>
           </div>
         </div>
-        
-        
+      </div>
+      
+      <div class="column">
+          <div class="paragraph">
+            <div class="title">Something to the right</div>
+            
+            Example content for your viewing experience.
+          </div>
       </div>
     </div>
     
