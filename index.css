@@ -37,7 +37,7 @@ img#background-logo {
   
   width: 65vh;
   
-  opacity: 50%;
+  opacity: 10%;
   
   user-select: none;
 }
@@ -69,9 +69,6 @@ img#copy-to-clipboard {
   user-select: none;
   
   background-color: transparent;
-
-  /* transition: 0.2s ease-in-out; */
-  transition-delay: 0;
 }
 
 .collapsible.arrow::after {
@@ -99,8 +96,16 @@ img#copy-to-clipboard {
 }
 
 .content>.content {
-  padding: 0 1vh 1vh 1vh;
-  /* background-color: #0001; */
+  padding: 0 0 1vh 1vh;
+} 
+
+.content>.collapsible.arrow {
+  width: calc(100% - 2vh);
+  
+  background-color: #d8d8d8;
+  color: #2f2f2f;
+
+  border: solid 1vh #d8d8d8;
 }
 
 /* PAGE */
@@ -215,7 +220,6 @@ div.meter::after {
   justify-content: space-around;
   
   grid-row-gap: 1vh;
-  
 }
 
 .items .item {

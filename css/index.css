@@ -1,0 +1,312 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+  padding: 0;
+  margin: auto;
+  
+  width: 100%;
+  height: 100%;
+  
+  background-color: #1f1e2b;
+}
+
+a[href] {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Frame & Columns */
+.frame {
+  margin: 5rem 10rem;
+  
+  text-align: center;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2.2rem;
+  justify-content: center;
+}
+
+.column {
+  width: 20rem;
+}
+
+.column#center-column {
+  width: 36rem;
+}
+
+.frame .column div {
+  z-index: 1;
+  
+  position: relative;
+  
+  border-radius: 0.7rem;
+}
+
+/* Dividers */
+.rainbow {
+  height: 0.7rem;
+  
+  background-image: url("../images/miscellaneous/rainbow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border-color: transparent;
+  border-radius: 0.7rem;
+  border-collapse: separate;
+  overflow: hidden;
+}
+
+.divider {
+  margin: 0.6rem auto;
+}
+
+.divider.big {
+  margin: 1.2rem auto;
+}
+
+/* Folder */
+.folder {
+  padding: 0;
+  
+  width: 100%;
+  
+  cursor: pointer;
+  border: none;
+  outline: none;
+  user-select: none;
+  
+  background-color: transparent;
+}
+
+.folder.arrow::after {
+  transform: rotate(180deg);
+  
+  width: 0.6rem;
+  
+  float: right;
+  
+  content: url("../images/icons/arrow.svg");
+  
+  font-size: 1rem;
+}
+
+.active.arrow::after {
+  transform: translateY(-0.22rem) rotate(0deg);
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+}
+
+.content>.content {
+  padding: 0 0 0.5rem 0.5rem;
+}
+
+.content>.folder.arrow {
+  width: calc(100% - 1rem);
+  
+  background-color: #d8d8d8;
+  color: #2f2f2f;
+
+  border: solid 1rem #d8d8d8;
+}
+
+/* Status Bars */
+.meter {
+  margin: 0 0.35rem;
+  height: 0.5rem;
+  
+  text-align: left;
+  font-size: 0.8rem;
+
+  border-radius: 1rem;
+
+  background-color: #d8d8d8;
+}
+
+.meter:after {
+  height: 100%;
+  width: calc(var(--level)*10%);
+  
+  display: block;
+  content: " ";
+  
+  border-radius: inherit;
+
+  background-color: #0fb460;
+}
+
+.meter-header {
+  margin: 0.35rem 0.5rem 0.3rem 0.5rem;
+  
+  height: 1.1rem;
+  
+  font-size: 1rem;
+}
+
+.meter-header[_title]::before {
+  content: attr(_title);
+  
+  float: left;
+}
+
+.meter-header[_desc]::after {
+  content: attr(_desc);
+  
+  float: right;
+}
+
+/* All Elements within Columns ---- */
+/* Card */
+.card {
+  padding: 0.8rem 1.1rem;
+  
+  text-align: left;
+  color: #38354a;
+  font: 1.2rem 'Dosis', sans-serif;
+
+  background-color: white;
+}
+
+.card a[href] {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.card .title {
+  margin-bottom: 1rem;
+  
+  font-size: 0.9rem;
+  text-align: left;
+  letter-spacing: 0.1rem;
+}
+
+/* Account Tab */
+.account {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  
+  text-align: left;
+  
+  background-color: white;
+  border-left: 0.7rem solid #636999;
+  
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.account .platform {
+  padding-top: 0.05rem;
+  
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+}
+
+.account .username {
+  font-size: 1.05rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.account#discord {
+  border-color: #7289da;
+}
+
+.account#steam {
+  border-color: #2a475e;
+}
+
+.account#twitter {
+  border-color: #1da1f2;
+}
+
+img#copy-to-clipboard {
+  float: right;
+  width: 1.1rem;
+  
+  user-select: none;
+  
+  opacity: 0%;
+}
+
+.account .username:hover img#copy-to-clipboard {
+  margin-top: 0.05rem;
+  opacity: 50%;
+}
+
+/* Collection */
+.collection {
+  padding: 0.5rem;
+  
+  background-color: white;
+  
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.collection .title {
+  margin-bottom: 0.6rem;
+
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.items {  
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-row-gap: 0.5rem;
+  justify-content: space-around;
+}
+
+.items .item {
+  width: 2.8rem;
+  height: 2.8rem;
+  
+  background-color: #e2e2e2;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* -------------------------------- */
+
+/* Specific Elements -------------- */
+/* Background Image */
+img#background-logo {
+  z-index: 0;
+  
+  position: fixed;
+  
+  bottom: -5.5rem;
+  left: -3rem;
+  
+  width: 35rem;
+  
+  opacity: 30%;
+  
+  user-select: none;
+}
+
+/* Card: Download PDF */
+.card#pdf {
+  color: white;
+  background-color: #e24129;
+}
+
+.card#pdf .title {
+  font-weight: bold;
+}
+
+/* Collection: Where to fine me? */
+.collection .item#thecryptadex {
+  background-image: url("../images/icons/thecryptadex.png");
+}
+
+/* -------------------------------- */
