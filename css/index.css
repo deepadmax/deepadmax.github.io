@@ -67,6 +67,10 @@ a[href] {
   margin: 1.2rem auto;
 }
 
+.divider.solid {
+  height: 0.001rem;
+}
+
 /* Folder */
 .folder {
   padding: 0;
@@ -166,7 +170,7 @@ a[href] {
 /* All Elements within Columns ---- */
 /* Card */
 .card {
-  padding: 0.8rem 1.1rem;
+  padding: 0.7rem 1.1rem;
   
   text-align: left;
   color: #38354a;
