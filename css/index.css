@@ -41,8 +41,6 @@ a[href] {
   z-index: 1;
   
   position: relative;
-  
-  border-radius: 0.7rem;
 }
 
 /* Dividers */
@@ -177,6 +175,8 @@ a[href] {
   font: 1.2rem 'Dosis', sans-serif;
 
   background-color: white;
+  
+  border-radius: 0.7rem;
 }
 
 .card a[href] {
@@ -200,6 +200,7 @@ a[href] {
   
   background-color: white;
   border-left: 0.7rem solid #636999;
+  border-radius: 0.7rem;
   
   display: grid;
   grid-template-columns: 25% 75%;
@@ -244,17 +245,17 @@ img#copy-to-clipboard {
   opacity: 50%;
 }
 
-/* Collection */
-.collection {
+/* Library */
+.library {
   padding: 0.5rem;
   
   background-color: white;
   
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
-.collection .title {
+.library .title {
   margin-bottom: 0.6rem;
 
   text-align: center;
@@ -263,7 +264,7 @@ img#copy-to-clipboard {
 
 .items {  
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: repeat(6, auto);
   grid-row-gap: 0.5rem;
   justify-content: space-around;
 }
@@ -277,6 +278,8 @@ img#copy-to-clipboard {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  
+  border-radius: 0.7rem;
 }
 
 /* -------------------------------- */
@@ -308,9 +311,37 @@ img#background-logo {
   font-weight: bold;
 }
 
-/* Collection: Where to fine me? */
-.collection .item#thecryptadex {
+/* Library: Where to fine me? */
+.library .item#thecryptadex {
   background-image: url("/images/icons/thecryptadex.png");
+}
+
+/* Library: Programming Languages */
+.library#languages .item {
+  background-color: transparent;
+  background-size: 75%;
+  
+  border-radius: 0;
+}
+
+.library#languages .item#python {
+  background-image: url("/images/icons/python.png");
+}
+
+.library#languages .item#html {
+  background-image: url("/images/icons/html.png");
+}
+
+.library#languages .item#css {
+  background-image: url("/images/icons/css.png");
+}
+
+.library#languages .item#javascript {
+  background-image: url("/images/icons/javascript.png");
+}
+
+.library#languages .item#nodejs {
+  background-image: url("/images/icons/nodejs.png");
 }
 
 /* -------------------------------- */
