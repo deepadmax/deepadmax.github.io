@@ -135,7 +135,7 @@ a[href] {
 
 .meter:after {
   height: 100%;
-  width: calc(var(--level)*10%);
+  width: calc(var(--level)*1%);
   
   display: block;
   content: " ";
