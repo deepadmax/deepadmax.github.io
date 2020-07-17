@@ -24,7 +24,7 @@ a[href] {
   text-align: center;
   
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, auto);
   grid-column-gap: 2.2rem;
   justify-content: center;
 }
@@ -97,6 +97,10 @@ a[href] {
 
 .active.arrow::after {
   transform: translateY(-0.22rem) rotate(0deg);
+}
+
+.lang-folder{
+  @extends .forlder
 }
 
 .content {
@@ -253,6 +257,7 @@ img#copy-to-clipboard {
   
   font-size: 0.9rem;
   text-align: center;
+  align-items: center;
 }
 
 .library .title {
@@ -267,6 +272,7 @@ img#copy-to-clipboard {
   grid-template-columns: repeat(6, auto);
   grid-row-gap: 0.5rem;
   justify-content: space-around;
+  align-items: center;
 }
 
 .items .item {
