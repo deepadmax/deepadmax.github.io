@@ -227,6 +227,14 @@ a[href] {
   border-color: #7289da;
 }
 
+.account#matrix {
+  border-color: #099970;
+}
+
+.account#github {
+  border-color: #3b6088;
+}
+
 .account#steam {
   border-color: #2a475e;
 }
