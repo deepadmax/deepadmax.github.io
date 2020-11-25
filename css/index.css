@@ -224,6 +224,10 @@ a[href] {
   border-color: #1da1f2;
 }
 
+.account#email {
+  border-color:#fac458;
+}
+
 img#copy-to-clipboard {
   float: right;
   width: 1.1rem;
